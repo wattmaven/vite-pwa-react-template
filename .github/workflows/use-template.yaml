@@ -29,7 +29,7 @@ jobs:
           echo "✅ Passed" >> $GITHUB_STEP_SUMMARY
 
       - name: update commit
-        uses: "stefanzweifel/git-auto-commit-action@v4"
+        uses: "stefanzweifel/git-auto-commit-action@e348103e9026cc0eee72ae06630dbe30c8bf7a79" # v5
         with:
           commit_message: "feat: initial commit"
           commit_options: "--amend"
