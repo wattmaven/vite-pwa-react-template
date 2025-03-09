@@ -1,0 +1,33 @@
+name: use-template
+
+# The workflow will run when the "Use this template" button is used
+on:
+  push:
+
+jobs:
+  use-template:
+    # We only run this action when the repository isn't the template repository.
+    #
+    # References:
+    # - https://docs.github.com/en/actions/learn-github-actions/contexts
+    # - https://docs.github.com/en/actions/learn-github-actions/expressions
+    if: ${{ !github.event.repository.is_template }}
+    permissions: "write-all"
+    runs-on: "ubuntu-latest"
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4
+        with:
+          fetch-depth: 0
+
+      - name: update commit
+        uses: "stefanzweifel/git-auto-commit-action@v4"
+        with:
+          commit_message: "feat: initial commit"
+          commit_options: "--amend"
+          push_options: "--force"
+          skip_fetch: true
+
+      - name: add commit summary
+        run: |
+          echo "## Commit result" >> $GITHUB_STEP_SUMMARY
+          echo "✅ Passed" >> $GITHUB_STEP_SUMMARY
