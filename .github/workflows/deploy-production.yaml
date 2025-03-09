@@ -1,0 +1,43 @@
+# name: deploy-production
+#
+# env:
+#   VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+#   VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+#   VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
+#
+# on:
+#   workflow_dispatch:
+#   push:
+#     # Pattern matched against refs/tags
+#     tags:
+#       # Match any tag starting with 'v'
+#       - "v*"
+#
+# jobs:
+#   deploy-production:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4
+#
+#       - uses: pnpm/action-setup@v4
+#         with:
+#           version: 9.15.4
+#           run_install: false
+#       - uses: actions/setup-node@1d0ff469b7ec7b3cb9d8673fde0c81c44821de2a # v4
+#         with:
+#           node-version: 20
+#           cache: pnpm
+#
+#       - run: pnpm i
+#
+#       - name: install Vercel CLI
+#         run: pnpm add --global vercel@latest
+#
+#       - name: pull Vercel environment information
+#         run: vercel pull --yes --environment=production --token=${{ secrets.VERCEL_TOKEN }}
+#
+#       - name: build project artifacts
+#         run: vercel build --prod --token=${{ secrets.VERCEL_TOKEN }}
+#
+#       - name: deploy project artifacts to Vercel
+#         run: vercel deploy --prebuilt --prod --token=${{ secrets.VERCEL_TOKEN }}
