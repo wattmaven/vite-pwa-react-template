@@ -14,7 +14,7 @@ pnpm dev
 
 1. Add the `VERCEL_TOKEN` and `VERCEL_ORG_ID` to the repository or organization secrets.
 2. Create a new Vercel project using the repository and add the `VERCEL_PROJECT_ID` to the repository secrets.
-3. Delete the commented out workflows in the `.github/workflows` directory:
+3. Enable the following workflows in the `.github/workflows` directory by uncommenting them:
    - `changesets.yaml`
    - `deploy-hotfix.yaml`
    - `deploy-preview.yaml`
