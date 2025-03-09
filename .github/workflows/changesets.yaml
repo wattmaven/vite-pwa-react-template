@@ -9,7 +9,7 @@ concurrency: ${{ github.workflow }}-${{ github.ref }}
 
 jobs:
   version:
-    # Don't run this workflow on this template repository, only on user repositories.
+    # Don't run this workflow on the template repository, only on user repositories.
     if: ${{ !github.event.repository.is_template }}
     runs-on: ubuntu-latest
     permissions: write-all
