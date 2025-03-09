@@ -19,6 +19,15 @@ jobs:
         with:
           fetch-depth: 0
 
+      - name: remove files
+        run: |
+          rm -f "./.github/workflows/use-template.yaml"
+
+      - name: add remove summary
+        run: |
+          echo "## Remove result" >> $GITHUB_STEP_SUMMARY
+          echo "✅ Passed" >> $GITHUB_STEP_SUMMARY
+
       - name: update commit
         uses: "stefanzweifel/git-auto-commit-action@v4"
         with:
