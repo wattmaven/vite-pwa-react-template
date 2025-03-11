@@ -9,7 +9,7 @@ import tseslint from "typescript-eslint";
 export default tseslint.config(
   eslintPluginPrettierRecommended,
   {
-    ignores: ["dev-dist", "dist", ".turbo"],
+    ignores: ["src/routeTree.gen.ts", "dev-dist", "dist", ".turbo"],
   },
   {
     languageOptions: {
