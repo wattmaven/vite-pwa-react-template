@@ -38,10 +38,10 @@
     "@commitlint/prompt-cli": "19.8.0",
     "@commitlint/types": "19.8.0",
     "@eslint/js": "9.22.0",
-    "@tanstack/router-devtools": "1.114.14",
-    "@tanstack/router-plugin": "1.114.14",
+    "@tanstack/router-devtools": "1.114.25",
+    "@tanstack/router-plugin": "1.114.25",
     "@types/node": "22.13.10",
-    "@types/react": "19.0.10",
+    "@types/react": "19.0.12",
     "@types/react-dom": "19.0.4",
     "@vite-pwa/assets-generator": "0.2.6",
     "@vitejs/plugin-react": "4.3.4",
@@ -59,16 +59,16 @@
     "prettier-plugin-tailwindcss": "0.6.11",
     "rimraf": "6.0.1",
     "turbo": "2.4.4",
-    "typescript": "5.7.3",
-    "typescript-eslint": "8.26.0",
-    "vite": "6.2.1",
+    "typescript": "5.8.2",
+    "typescript-eslint": "8.27.0",
+    "vite": "6.2.2",
     "vite-plugin-pwa": "0.21.1",
     "workbox-core": "7.3.0",
     "workbox-window": "7.3.0"
   },
   "resolutions": {
-    "sharp": "0.32.6",
+    "sharp": "0.33.5",
     "sharp-ico": "0.1.5"
   },
-  "packageManager": "pnpm@9.15.4"
+  "packageManager": "pnpm@9.15.9"
 }
