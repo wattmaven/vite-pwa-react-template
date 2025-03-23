@@ -20,7 +20,6 @@ jobs:
 
       - uses: pnpm/action-setup@v4
         with:
-          version: 9.15.4
           run_install: false
       - uses: actions/setup-node@cdca7365b2dadb8aad0a33bc7601856ffabcc48e # v4
         with:
