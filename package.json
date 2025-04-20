@@ -32,27 +32,27 @@
     "tailwindcss": "^4.0.12"
   },
   "devDependencies": {
-    "@changesets/cli": "2.28.1",
+    "@changesets/cli": "2.29.2",
     "@commitlint/cli": "19.8.0",
     "@commitlint/config-conventional": "19.8.0",
     "@commitlint/prompt-cli": "19.8.0",
     "@commitlint/types": "19.8.0",
     "@eslint/js": "9.24.0",
-    "@tanstack/router-devtools": "1.115.2",
-    "@tanstack/router-plugin": "1.115.2",
-    "@types/node": "22.14.0",
-    "@types/react": "19.1.0",
+    "@tanstack/router-devtools": "1.116.0",
+    "@tanstack/router-plugin": "1.116.1",
+    "@types/node": "22.14.1",
+    "@types/react": "19.1.2",
     "@types/react-dom": "19.1.2",
     "@vite-pwa/assets-generator": "1.0.0",
-    "@vitejs/plugin-react": "4.3.4",
+    "@vitejs/plugin-react": "4.4.0",
     "eslint": "9.24.0",
-    "eslint-config-prettier": "10.1.1",
+    "eslint-config-prettier": "10.1.2",
     "eslint-plugin-prettier": "5.2.6",
     "eslint-plugin-react": "7.37.5",
     "eslint-plugin-react-hooks": "5.2.0",
     "eslint-plugin-react-refresh": "0.4.19",
     "globals": "16.0.0",
-    "lefthook": "1.11.8",
+    "lefthook": "1.11.10",
     "npm-run-all2": "7.0.2",
     "prettier": "3.5.3",
     "prettier-plugin-organize-imports": "4.1.0",
@@ -60,8 +60,8 @@
     "rimraf": "6.0.1",
     "turbo": "2.5.0",
     "typescript": "5.8.3",
-    "typescript-eslint": "8.29.1",
-    "vite": "6.2.6",
+    "typescript-eslint": "8.30.1",
+    "vite": "6.3.1",
     "vite-plugin-pwa": "1.0.0",
     "workbox-core": "7.3.0",
     "workbox-window": "7.3.0"
@@ -70,5 +70,5 @@
     "sharp": "0.34.1",
     "sharp-ico": "0.1.5"
   },
-  "packageManager": "pnpm@10.8.0"
+  "packageManager": "pnpm@10.8.1"
 }
